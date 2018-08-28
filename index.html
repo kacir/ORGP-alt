@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Arkansas Funded Parks</title>
+  
+  <link rel="shortcut icon" href="https://www.arkansasstateparks.com/themes/custom/asp_cog/favicon.ico" type="image/vnd.microsoft.icon" />
+  
+  <!--  Custom Styles  -->
+  <link rel="stylesheet" href="css/style.css"></link>
+  
+  <!-- Start loading d3 script libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.2/d3.min.js">
+  </script>
+  
+  
+</head>
+
+<body>
+  <div class="hidden hover-popup">Click on the button to see funded parks information!</div>
+  <header>
+    <h1>Welcome!</h1>
+  </header>
+
+  <section>
+    <h3>Which of the following best describes you?</h3>
+    <a href="findPark.html?type=sponsor"><button class="view-selection-option">Mayor, County Judge, or Parks Director</button></a>
+    <a href="findPark.html?type=public"><button class="view-selection-option">Concernened and Engadged Citizen</button></a>
+    <a href="findPark.html?type=senator"><button class="view-selection-option">Arkansas State Senator</button></a>
+    <a href="findPark.html?type=house"><button class="view-selection-option">Arkansas State Represntative</button></a>
+    <a href="findPark.html?type=congress"><button class="view-selection-option">US Congressman or Congresswoman</button></a>
+  </section>
+  
+  <footer>These services have been provided by the Arkansas Department of Parks and Tourism</footer>
+  
+  <!-- custom javascript for this page only -->
+  <script src="js/index.js">
+  </script>
+  
+</body>
+
+</html>

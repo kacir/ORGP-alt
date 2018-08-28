@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Arkansas Parks</title>
+  <link rel="shortcut icon" href="https://www.arkansasstateparks.com/themes/custom/asp_cog/favicon.ico" type="image/vnd.microsoft.icon" />
+
+  <!--  Leaflet css  -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"></link>
+
+  <link rel="stylesheet" href="css/adminTheme.css"></link>
+  <!--  Custom Styles  -->
+  <link rel="stylesheet" href="css/style.css"></link>
+
+
+
+  <!--  External Libraries  -->
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+  <!-- d3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.2/d3.min.js">
+  </script>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- JS Turf for spatial analysis - (a.k.a. Spatial Join) -->
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="https://unpkg.com/esri-leaflet@2.2.2/dist/esri-leaflet.js" integrity="sha512-cll/dcqNKG7yfQBrTbRNzGQ70Bh4m+J5jnvU97tPyMnWsD1Ry+CXi0JE+T7Rk54pdJEYlRgXtpwxa9sUqzUAyg==" crossorigin=""></script>
+
+</head>
+
+
+
+
+<body>
+  <!-- This is the invisible modal window that shows up when loading is in progress -->
+  <div id="modal-window" class="">
+    <div class="modal-content">
+      <h3>Please wait a minute or so for everything to load</h3>
+      <svg id="loadingBar"></svg>
+      <span id="progress-percent">0%</span>
+    </div>
+  </div>
+  <header>
+    <h1>Find Your Park!</h1>
+    <a href="index.html">
+      <button>Go Back to the begining</button>
+    </a>
+
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8" id="map"></div>
+      <div class="col-md-4" id="infoPanel">
+      </div>
+    </div>
+  </div>
+  <br/>
+  <footer>Credits are given to the Arkansas Department of Parks and Tourism, OSM, Leaflet, jQuery for use of software and other resources</footer>
+
+  <!-- Scripts -->
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

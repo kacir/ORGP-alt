@@ -1,0 +1,148 @@
+/* general html element css */
+body {
+  background: #d8b365;
+  background-color: #d8b365;
+}
+header {
+  background: #5ab4ac;
+  border-style: solid;
+  border-color: black;
+  border-stroke: 0.5px;
+
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+h1,
+h2,
+h3,
+footer {
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+}
+
+/* spacing css for the major cells and panels */
+div.row {
+  background-color: white;
+  border-radius: 18px;
+}
+
+#map {
+  width: 500px;
+  height: 500px;
+  z-index: 0; /* Sit on top */
+}
+
+#infoPanel {
+  padding : 2.5%;
+}
+
+
+/** Bootstrap class **/
+.container {
+  padding: 2%;
+  background-color: white;
+  border-radius: 18px;
+}
+
+/*classes for results to searches in the info panel*/
+.result-container {
+  border-bottom-style : solid;
+  border-bottom-width : thin;
+  border-bottom-color : black;
+  padding-top : 4%;
+  cursor : pointer;
+  font-size: 10px;
+}
+
+.result-container:hover {
+  background-color : grey;
+}
+
+.result-header {
+  font-size: 12px;
+  border-bottom-style : solid;
+  border-bottom-width : thin;
+  border-bottom-color : black;
+}
+
+
+/*Elements dealing with the modal window that show up when everything is loading*/
+#modal-window {
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 100px; /* Location of the box */
+}
+.modal-content {
+  margin: auto;
+  background-color: #fefefe;
+  width: 80%;
+  border: 1px solid #888;
+  padding: 2%;
+}
+svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+#progress-percent {
+  text-align : center;
+}
+
+
+.hover-popup {
+  display : block;
+  position: absolute;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  background-color: white;
+  padding : 1.5%;
+   
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    
+  /**prevent mouseover event from being triggered when box is moused over **/
+	pointer-events: none;
+}
+
+/* class used to hide modal window when loading is finished. */
+.hidden {
+  display : none;
+}
+
+
+/* contains the title of the park inside of the leaflet popup */
+.popuptitle {
+  text-align : center;
+}
+
+
+.view-selection-option {
+  margin : auto;
+}
+
+/* applys styles to the leaflet tooltips */
+div.leaflet-tooltip {
+  background-color : green;
+  color : white;
+}
+
+#loading-icon {
+  width : 100px;
+  height : 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
